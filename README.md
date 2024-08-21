@@ -1,0 +1,2 @@
+# Ghaddar-RV32I-
+# RV32I-PIPELINED-CORE

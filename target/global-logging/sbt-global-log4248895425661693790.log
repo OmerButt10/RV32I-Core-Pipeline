@@ -1,0 +1,30 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly SC.TopTest -- -DwriteVcd=1, Some(8f619d6c-1c17-4b95-a855-946ac707dc88), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 19 Scala sources to /home/omer/Single Cycle/target/scala-2.12/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 11 Scala sources to /home/omer/Single Cycle/target/scala-2.12/test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/omer/Single Cycle/src/test/scala/SC/ALU.scala:36:33: method >> in class Int is deprecated (since 2.12.7): shifting a value by a `Long` argument is deprecated (except when the value is a `Long`).[0m
+[0m[[0m[33mwarn[0m] [0m[0mCall `toInt` on the argument to maintain the current behavior and avoid the deprecation warning.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    case ALU_SRA => src_a.toInt >> ( src_b & 0x1F )[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTopTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Top *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  chisel3.internal.ChiselException: Connection between sink (SInt<32>(IO in unelaborated IF_ID)) and source (UInt<32>(Reg in IF_ID)) failed @: Sink (SInt<32>(IO in unelaborated IF_ID)) and Source (UInt<32>(Reg in IF_ID)) have different types.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ... ()[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at SC.IF_ID.<init>(IF_ID.scala:28)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at SC.TopTest.$anonfun$new$2(TOP.scala:9)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ... ()[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ... (Stack trace trimmed to user code only. Rerun with --full-stacktrace to see the full stack trace)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 688 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 0, failed 1, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	SC.TopTest[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 10 s, completed Aug 8, 2024, 10:30:36 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m

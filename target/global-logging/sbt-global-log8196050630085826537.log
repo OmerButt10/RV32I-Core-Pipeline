@@ -1,0 +1,15 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly SC.TopTest -- -DwriteVcd=1, Some(fd571e57-559e-48fd-b749-b59f83dee4bf), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 15 Scala sources to /home/omer/Single Cycle/target/scala-2.12/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.12' for Scala 2.12.13. Compiling...[0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 7.37s.[0m
+[0m[[0m[31merror[0m] [0m[0m/home/omer/Single Cycle/src/main/scala/SC/TOP.scala:97:13: value instr_in is not a member of chisel3.Bundle{val IF_ID_pc: chisel3.SInt; val pc_out: chisel3.SInt; val rs1_sel_in: chisel3.UInt; val rs1_sel_out: chisel3.UInt; val rs2_sel_in: chisel3.UInt; val rs2_sel_out: chisel3.UInt; val rs1_in: chisel3.UInt; val rs1_out: chisel3.UInt; val rs2_in: chisel3.UInt; val rs2_out: chisel3.UInt; val imm: chisel3.UInt; val imm_out: chisel3.UInt; val rd_sel_in: chisel3.UInt; val rd_sel_out: chisel3.UInt; val func3_in: chisel3.UInt; val func3_out: chisel3.UInt; val func7_in: chisel3.UInt; val func7_out: chisel3.UInt; val ctrl_MemWr_in: chisel3.Bool; val ctrl_MemWr_out: chisel3.Bool; val ctrl_MemRd_in: chisel3.Bool; val ctrl_MemRd_out: chisel3.Bool; val ctrl_Branch_in: chisel3.Bool; val ctrl_Branch_out: chisel3.Bool; val ctrl_RegWr_in: chisel3.Bool; val ctrl_RegWr_out: chisel3.Bool; val ctrl_MemtoReg_in: chisel3.Bool; val ctrl_MemtoReg_out: chisel3.Bool; val ctrl_ALUOP_in: chisel3.UInt; val ctrl_ALUOP_out: chisel3.UInt; val ctrl_OpA_sel_in: chisel3.Bool; val ctrl_OpA_sel_out: chisel3.Bool; val ctrl_OpB_sel_in: chisel3.Bool; val ctrl_OpB_sel_out: chisel3.Bool; val ctrl_nextPc_sel_in: chisel3.UInt; val ctrl_nextPc_sel_out: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m    idEx.io.instr_in := ifId.io.instr_out[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 9 s, completed Aug 6, 2024, 3:59:45 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m
